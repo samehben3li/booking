@@ -25,7 +25,7 @@ const Hotels = () => {
             <h1 className="lsTitle">Search</h1>
             <div className="lsItem">
               <label>Destination</label>
-              <input type="text" placeholder={dest} />
+              <input type="text" placeholder={dest} onChange={e=>setDest(e.target.value)} />
             </div>
             <div className="lsItem">
               <label>Check-in date</label>
@@ -46,15 +46,15 @@ const Hotels = () => {
                 </div>
                 <div className="lsOption">
                   <span className="lsOptionText">Adult</span>
-                  <input type="number" className="lsOptionInput" min={1} placeholder={options.adult} />
+                  <input type="number" className="lsOptionInput" min={1} placeholder={options.adult} onChange={e=>setOptions({...options,adult:e.target.value})} />
                 </div>
                 <div className="lsOption">
                   <span className="lsOptionText">Children</span>
-                  <input type="number" className="lsOptionInput" min={0} placeholder={options.children} />
+                  <input type="number" className="lsOptionInput" min={0} placeholder={options.children} onChange={e=>setOptions({...options, children:e.target.value})} />
                 </div>
                 <div className="lsOption">
                   <span className="lsOptionText">Room</span>
-                  <input type="number" className="lsOptionInput" min={1} placeholder={options.room} />
+                  <input type="number" className="lsOptionInput" min={1} placeholder={options.room} onChange={e=>setOptions({...options,room: e.target.value})} />
                 </div>
               </div>
             </div>
