@@ -15,12 +15,12 @@
     color: white;
 }
 
-.logo{
-    font-weight: 500;
+.logo {
+    font-weight: 600;
     cursor: pointer;
 }
 
-.navButton{
+.navButton {
     margin-left: 20px;
     border: none;
     padding: 5px 10px;
